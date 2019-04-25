@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<!--
+    网页由电子商务3班黎樱洁团队  设计  并 制作完成
+
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广东海洋大学寸金学院</title>
+    <style type="text/css">
+    *{
+        padding:0;
+        margin:0;
+        text-decoration:none;
+        list-style:none;
+    }
+    body{
+        width:100%;
+        height:100%;
+        background:#ecf0f1;
+        position:relative;
+    }
+    .main{
+        width:1920px;
+        position:absolute;
+    }
+    /*头部校园- 图片 搜索区域*/
+    .wrap .top{
+        width:100%;
+        height:116px;
+        background:#da5a57;
+        
+    }
+    .wrap .top img{
+        /* position:absolute;
+        left:333px; */
+        margin-left:333px;
+    }
+    .search-box{
+        position:absolute;
+        left:1420px;
+        top:40px;
+        height:40px;
+        outline:none;
+    }
+
+    .search-box .search-txt{
+        height:36px;
+        width:150px;
+        border:2px solid #fff;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius:20px;
+        
+    }
+    .search-box .search-btn{
+        height:40px;
+        width:50px;
+        border:none;
+        border-top-right-radius:20px;
+        border-bottom-right-radius:20px;
+        margin-left:-5px;
+        vertical-align: bottom;
+        font-weight: 700;
+        font-size:15px;
+        color:#2c3e50;
+        cursor:pointer;
+        background:#dfe6e9; 
+
+        transition-property:width;
+        transition-duration:0.2s ;
+        transition-timing-function:linear;
+        transition-delay:0;
+    }
+    .search-box .search-btn:hover{
+        color:#000;
+        font-weight: 700;
+        font-size:20px;
+        width:80px;
+        
+    }
+
+
+    /*  nav  */
+.wrapper-nav .nav{
+    width:1230px;
+    height:40px;
+    margin:0 auto;
+    background:#2f3640;
+}
+.wrapper-nav .nav ul{
+    display:inline-block;
+}
+.wrapper-nav .nav ul li{
+    float:left;
+    display:inline-block;
+    height:40px;
+    width:100px;
+    line-height:40px;
+    text-align:center;
+}
+/* .wrapper-nav .nav ul li+li{
+    border-left:1px solid #fff;
+} */
+.wrapper-nav .nav ul li a{
+    color:#fff;
+    font-weight: 500;
+    font-size:18px;
+}
+.wrapper-nav .nav ul li a:hover{
+    color:#2f3640;
+    background:#fff;
+    /* color:#da5a57; */
+    font-weight: 700;
+    font-size:23px;
+    border-radius:6px;
+}
+/*   BIG picture  */
+.picture{
+    margin:0 auto;
+    width:1230px;
+    border-top:1px solid #636e72;
+}
+.picture:hover{
+    cursor:pointer;
+}
+/******    8-list nav    **************/ 
+.app{
+    width:1230px;
+    height:247px;
+    margin:0 auto;
+    margin-top:8px;
+    background:#fff;
+}
+.app .image{
+    display:inline-block;
+    width:200px;
+    height:100px;
+    margin:10px 45px  10px 52px;
+    border:2px solid transparent;
+
+}
+.app .image:hover{
+    border:2px solid #f4ea2a;
+    border-radius:30px;
+}
+.app .image img{
+    vertical-align: middle;
+}
+.app .image span{
+    display:inline-block;
+    font-size:20px;
+    font-weight:600;
+    color:#f1c40f;
+    vertical-align: middle;
+}
+/*********      homepage        ********/
+.homepage{
+    width:1230px;
+    height:1400px;
+    /* background:#f4ea2a; */
+    margin:23px auto;
+    position:relative;
+    /* background:#f4ea2a; */
+}
+/* .homepage::after{
+    display:inline;
+    content:"";
+    clear:both;
+} */
+
+.homepage .menu-top-left{
+    display:inline-block;
+    width:450px;
+    height:416px;
+    background-color:#fff;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    position:relative;
+    position:absolute;
+    top:0;
+}
+.homepage .menu-top-left span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-top-left span:hover{
+    cursor:pointer;
+}
+.homepage .menu-top-left img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.homepage .menu-top-left .line{
+    width:422px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:10px;
+    margin-left:15px;
+}
+.homepage .menu-top-left ul li{
+    display:inline-block;
+    width:445px;
+    height:26px;
+    font-size:16px;
+    white-space:nowrap;/*文字一到边界，不换行直接横过来*/
+    overflow:hidden;/*溢出部分不能展示而是隐藏*/
+    text-overflow:ellipsis;/*溢出部分...*/
+    line-height:26px;
+}
+.homepage .menu-top-left ul li a{
+    color:#000;
+}
+.homepage .menu-top-left ul li a:hover{
+    color:#ff3838;
+    font-weight:600;
+}
+/*   **** ***** **** ** * ** **/
+.homepage .menu-top-right{
+    display:inline-block;
+    width:750px;
+    height:760px;
+    background-color:#fff;
+    border-radius:20px;
+    margin-left:25px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.homepage .menu-top-right span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-top-right span:hover{
+    cursor:pointer;
+}
+.homepage .menu-top-right img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.homepage .menu-top-right .line{
+    width:720px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:10px;
+    margin-left:15px;
+    
+}
+.homepage .menu-top-right .change {
+    display:inline-block;
+    margin-left:16px;
+    margin-top:10px;
+    width:700px;
+    height:300px;
+
+}
+.homepage .menu-top-right .change img{
+    width:700px;
+    height:300px; 
+}
+.homepage .menu-top-right ul{
+    margin-top:30px;
+    margin-left:20px;
+}
+.homepage .menu-top-right ul li{
+    display:inline-block;
+    width:700px;
+    height:26px;
+    font-size:16px;
+    white-space:nowrap;/*文字一到边界，不换行直接横过来*/
+    overflow:hidden;/*溢出部分不能展示而是隐藏*/
+    text-overflow:ellipsis;/*溢出部分...*/
+    line-height:26px;
+}
+.homepage .menu-top-right ul li a{
+    color:#000;
+}
+.homepage .menu-top-right ul li a:hover{
+    color:#ff3838;
+    font-weight:600;
+}
+/********               center left            ***/
+.homepage .menu-center-left{
+    display:inline-block;
+    width:450px;
+    height:334px;
+    background-color:#fff;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    position:relative;
+    position:absolute;
+    top:426px;
+}
+.homepage .menu-center-left span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-center-left span:hover{
+    cursor:pointer;
+}
+.homepage .menu-center-left img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;  
+    margin-top:15px;
+}
+.homepage .menu-center-left .line{
+    width:422px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:10px;
+    margin-left:15px;
+}
+.homepage .menu-center-left .pic-wrapper{
+    width:450px;
+    height:274px;
+    margin-left:-5px;
+}
+.homepage .menu-center-left .pic-wrapper .pic {
+    width:200px;
+    height:100px;
+    float:left;
+    margin:20px 10px 0 10px;
+
+}
+.homepage .menu-center-left .pic-wrapper .pic img {
+    width:200px;
+    height:100px;   
+}
+.homepage .menu-center-left .pic-wrapper .pic img:hover{
+    cursor:pointer;
+    border:5px solid #fff;
+    border-radius:15px;
+}
+/* ********   bottom  *********/
+
+
+
+.homepage .menu-bottom-left{
+    display:inline-block;
+    width:398px;
+    height:330px;                         /*270  7行*/
+    background-color:#fff;
+    border-radius:20px;
+    position:relative;
+    position:absolute;
+    top:780px;
+}
+.homepage .menu-bottom-left span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-bottom-left span:hover{
+    cursor:pointer;
+}
+.homepage .menu-bottom-left img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.homepage .menu-bottom-left .line{
+    width:370px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:10px;
+    margin-left:15px;
+}
+.homepage .menu-bottom-left ul li{
+    display:inline-block;
+    width:398px;
+    height:26px;
+    font-size:16px;
+    white-space:nowrap;/*文字一到边界，不换行直接横过来*/
+    overflow:hidden;/*溢出部分不能展示而是隐藏*/
+    text-overflow:ellipsis;/*溢出部分...*/
+    line-height:26px;
+}
+.homepage .menu-bottom-left ul li a{
+    color:#000;
+}
+.homepage .menu-bottom-left ul li a:hover{
+    color:#ff3838;
+    font-weight:600;
+}
+
+
+/************************************************/
+.homepage .menu-bottom-center{
+    display:inline-block;
+    width:398px;
+    height:330px;                         /*270  7行*/
+    background-color:#fff;
+    border-radius:20px;
+
+    position:relative;
+    position:absolute;
+    top:780px;
+    left:416px;
+}
+.homepage .menu-bottom-center span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-bottom-center span:hover{
+    cursor:pointer;
+}
+.homepage .menu-bottom-center img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.homepage .menu-bottom-center .line{
+    width:370px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:10px;
+    margin-left:15px;
+}
+.homepage .menu-bottom-center ul li{
+    display:inline-block;
+    width:398px;
+    height:26px;
+    font-size:16px;
+    white-space:nowrap;/*文字一到边界，不换行直接横过来*/
+    overflow:hidden;/*溢出部分不能展示而是隐藏*/
+    text-overflow:ellipsis;/*溢出部分...*/
+    line-height:26px;
+}
+.homepage .menu-bottom-center ul li a{
+    color:#000;
+}
+.homepage .menu-bottom-center ul li a:hover{
+    color:#ff3838;
+    font-weight:600;
+}
+/********       menu-bottom-right               *******/
+
+.homepage .menu-bottom-right{
+    display:inline-block;
+    width:398px;
+    height:330px;                         /*270  7行*/
+    background-color:#fff;
+    border-radius:20px;
+
+    position:relative;
+    position:absolute;
+    top:780px;
+    right:0;
+}
+.homepage .menu-bottom-right span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-bottom-right span:hover{
+    cursor:pointer;
+}
+.homepage .menu-bottom-right img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.homepage .menu-bottom-right .line{
+    width:370px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:10px;
+    margin-left:15px;
+}
+.homepage .menu-bottom-right ul li{
+    display:inline-block;
+    width:398px;
+    height:26px;
+    font-size:16px;
+    white-space:nowrap;/*文字一到边界，不换行直接横过来*/
+    overflow:hidden;/*溢出部分不能展示而是隐藏*/
+    text-overflow:ellipsis;/*溢出部分...*/
+    line-height:26px;
+}
+.homepage .menu-bottom-right ul li a{
+    color:#000;
+}
+.homepage .menu-bottom-right ul li a:hover{
+    color:#ff3838;
+    font-weight:600;
+}
+
+/********************   menu-bottom         **********/
+.homepage .menu-bottom{
+    display:inline-block;
+    width:1230px;
+    height:270px;                         /*270  7行*/
+    background-color:#fff;
+    border-radius:20px;
+    position:relative;
+    position:absolute;
+    top:1130px;
+
+}
+.homepage .menu-bottom span{
+    display:inline-block;
+    margin:18px 0 0 10px;
+    color:#2c3e50;
+    font-weight:600;
+    font-size:18px;
+    text-align:center;
+}
+.homepage .menu-bottom span:hover{
+    cursor:pointer;
+}
+.homepage .menu-bottom img{
+    display:inline-block;
+    position:absolute;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.homepage .menu-bottom .line{
+    width:1200px;
+    height:0;
+    border:1px solid #515151;
+    margin-top:1px;
+    margin-left:15px;
+}
+.homepage .menu-bottom .wrapper-pics{
+    width:1230px;
+    height:260px;
+    margin-top:20px;
+    margin-left:45px;
+
+}
+.homepage .menu-bottom .wrapper-pics .pics{
+    width:250px;
+    height:150px;
+    float:left;
+    margin-left:25px;
+}
+.homepage .menu-bottom .wrapper-pics .pics img{
+    width:250px;
+    height:150px;
+
+}
+.bottom{
+    width:100%;
+    height:150px;
+    background:#da5a57;
+    margin-top:50px;
+    position:relative;
+}
+.bottom h5{
+    text-align:center;
+    color:#fff;
+    font-weight:500;
+}
+.bottom .QR{
+    position: absolute;
+    top:30px;
+    right:300px;
+    width:107px;
+    height:87px;
+    background-image:url(weixin.gif);
+    
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="wrap">
+            <!--   ---------  top --------------->
+            <div class="top">
+                <img src="ocean.jpg" alt="">
+                <div class="search-box">
+                    <input type="text" class="search-txt" >
+                    <input type="button" class="search-btn" value="搜 索">
+                </div>
+            </div>      
+        </div>
+        <!--        nav   -->
+        <div class="wrapper-nav">
+            <div class="nav">
+                <ul>
+                    <li><a href="https://www.gdcjxy.com/">首    页</a></li>
+                    <li><a href="https://www.gdcjxy.com/">学院概况</a></li>
+                    <li><a href="https://www.gdcjxy.com/newjgsz/">机构设置</a></li>
+                    <li><a href="https://www.gdcjxy.com/">教育教学</a></li>
+                    <li><a href="https://www.gdcjxy.com/">招生就业</a></li>
+                    <li><a href="https://guoji.gdcjxy.com/index.html">国际交流</a></li>
+                    <li><a href="https://www.gdcjxy.com/">师资队伍</a></li>
+                    <li><a href="https://dangjian.gdcjxy.com/index.php?upcache=1">党建工作</a></li>
+                    <li><a href="http://59.34.231.86:83/Library/">图 书 馆</a></li>
+                    <li><a href="http://xxgk.gdcjxy.com/">信息公开</a></li>
+                    <li><a href="http://keji.gdcjxy.com/plus/list.php?tid=13">项目申报</a></li>
+                    <li><a href="https://www.gdcjxy.com/#">校友之家</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- BIG   PIC-->
+        <div class="picture">
+            <img src="bigSizePic.jpg" alt="">
+        </div>
+        <!-- 8-list nav-->
+        <div class="app">
+            <a href="https://www.gdcjxy.com/plus/list.php?tid=31" class="image"><img src="icon/文档.png" alt=""><span>学院文件</span></a>
+            <a href="https://www.gdcjxy.com/plus/list.php?tid=32" class="image"><img src="icon/信息.png" alt=""><span>会议通知</span></a>
+            <a href="http://cjjy.zjportal.net/sso/NewLogin.aspx?RequestUrl=http%3a%2f%2fcjjy.zjportal.net%2fDefault.aspx/" class="image"><img src="icon/设置.png" alt=""><span>OA系统</span></a>
+            <a href="https://www.gdcjxy.com/" class="image"><img src="icon/搜索.png" alt=""><span>学生查询</span></a>
+            <a href="https://www.gdcjxy.com/" class="image"><img src="icon/金币.png" alt=""><span>财务查询</span></a>
+            <a href="http://219.129.7.243:81/" class="image"><img src="icon/管理.png" alt=""><span>图书查询</span></a>
+            <a href="https://www.gdcjxy.com/" class="image"><img src="icon/人员.png" alt=""><span>综合服务</span></a>
+            <a href="https://www.gdcjxy.com/" class="image"><img src="icon/礼物.png" alt=""><span>一卡通查询</span></a>
+        </div>
+        <!--------        homepage---------->
+        <div class="homepage">
+            <div  class="menu-top-left">
+                <span>通知公告</span>
+                <img src="align/align-left.png" alt="">
+                <div class="line"></div>
+                <ul>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-23  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东海洋大学寸金学院部分管理岗位公开招聘公告</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-15  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;于召开中国共产党广东海洋大学寸金学院第二次代表大会的通知</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-12  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关注国家安全教育日，学习国家安全知识</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-03-29  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于开展2019年校级教学成果奖评选工作的通知</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-04-11  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于省级质量工程项目2018年度校内验收评审结果的公示</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-12-07  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年下半年全国大学英语四六级考试的考生须知</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-10-17  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于切实加强登革热防控工作的紧急通知</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-10-11  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于评选表彰2018年广东省民办教育优秀教师、优秀工作者推荐人选的公示</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-09-30  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于公示广东海洋大学寸金学院2017——2018学年国家奖学金获奖学生名单的通知</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-09-27  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东海洋大学寸金学院关于2018年“创新强校工程”项目立项公示</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-09-26  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于举办学习《习近平新时代中国特色社会主义思想三十讲》宣讲活动的通知 </a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-09-13  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于调整2018级新生入学报到时间的通知 </a></li>
+                    <!-- <li><a href="#">&nbsp;&nbsp;2018-09-12  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“双台风”逼近 请师生注意防台 </a></li> -->
+                
+                </ul>
+            </div>
+            <div  class="menu-top-right">
+                <span>校园新闻</span>
+                <img src="align/border-top.png" alt="">
+                <div class="line"></div>
+                <a href="#" class="change"><img src="align/轮播截图.png" alt=""></a>
+                <ul>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“教是为了不教！”——程可拉开讲，“对话”课程教学</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;喜讯 | 我院荣获2017年广东省高校学生工作优秀团队等荣誉称号</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【党代会·基层动态】行使党员权利，选好“两委”委员——管理学系党员大会顺利召开</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我院省级经济管理实验教学示范中心建设揭牌</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学院党委中心组传达学习全省教育大会精神</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【喜讯】管理学系师生在全国企业经营分析与决策技能大赛上获一等奖</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【喜讯】团队一等奖！经济与金融系师生…[2019-04-16]</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年党建工作部署会暨第二次党代会筹备工作会议召开</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄海晶副院长率队赴中山、珠海等地高校调研交流</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;04&nbsp;-&nbsp;01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【喜讯】学子在全国高校企业价值创造实践竞赛中获奖</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;03&nbsp;-&nbsp;29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以世界新科技 助湛江大发展——佛山全球创新技术应用转化中心（湛江分中心）落户我院</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019&nbsp;-&nbsp;03&nbsp;-&nbsp;28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谭树明书记率思政部教师学习习近平总书记在学校思政课教师座谈会上重要讲话精神</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-center-left">
+                <span>专题栏目</span>
+                <img src="align/pic-side.png" alt="">
+                <div class="line"></div>
+                <div class="pic-wrapper">
+                    <div class="pic"><img class="pic-top-left" src="pic/shijiuda.jpg" alt=""></div>
+                    <div class="pic"><img class="pic-top-right" src="pic/2.jpg" alt=""></div>
+                    <div class="pic"><img class="pic-bottom-left" src="pic/xyh_rk.jpg" alt=""></div>
+                    <div class="pic"><img class="pic-bottom-right" src="pic/4.jpg" alt=""></div>
+                </div>
+
+            </div>
+            <div  class="menu-bottom-left">
+                <span>教科动态</span>
+                <img src="align/align-left.png" alt="">
+                <div class="line"></div>
+                <ul>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-25  &nbsp;&nbsp;&nbsp;17级工商管理专业学子前往广东恒兴饲料实业股份有限公司实习</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-33  &nbsp;&nbsp;&nbsp;广东技术师范学院天河学院一行来访我院 </a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-16  &nbsp;&nbsp;&nbsp;管理学系新增实习基地</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-08  &nbsp;&nbsp;&nbsp;我院前往广东云浮翔顺集团考察调研</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-02  &nbsp;&nbsp;&nbsp;会计系赴浙江高校调研学习 </a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-02  &nbsp;&nbsp;&nbsp;机电工程系前往岭南师范学院进行实验室教学管理调研学习 </a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-03-29  &nbsp;&nbsp;&nbsp;创新创业，蓄势待发——我院会计系举办创新创业知识讲座</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-03-25  &nbsp;&nbsp;&nbsp;经济与金融系“信达·寸金投资者教育基地”培训班开课</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-03-20  &nbsp;&nbsp;&nbsp;管理学系进行国际商务专业学士学位评估工作部署 </a></li>
+                    <!-- <li><a href="#">&nbsp;&nbsp;2018-09-12  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“双台风”逼近 请师生注意防台 </a></li> -->           
+                </ul>
+            </div>
+            <div  class="menu-bottom-center">
+                <span>校园文化</span>
+                <img src="align/border-bottom.png" alt="">
+                <div class="line"></div>
+                <ul>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-25  &nbsp;&nbsp;&nbsp;我院心理咨询中心开展团体心理素质拓展培训</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-25  &nbsp;&nbsp;&nbsp;我院成功举办第五届“美好时光”留学分享会</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-22  &nbsp;&nbsp;&nbsp;机电工程系开展“学习强国”学习之星评选活动</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-03-19  &nbsp;&nbsp;&nbsp;“融一室之雅，展宿舍风采”——管理学系第四届宿舍文化展示比赛</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-17  &nbsp;&nbsp;&nbsp;机电系学习“习近平总书记在学校思想政治理论课教师座谈会上的重要讲话精神”</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-17  &nbsp;&nbsp;&nbsp;“预防春季疾病，你我共同参与”——管理学系校外志愿者活动圆满完成</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-15  &nbsp;&nbsp;&nbsp;经济与金融系举办“经贸杯”硬笔书法比赛</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-12  &nbsp;&nbsp;&nbsp;我院开展大学生职业生涯规划讲座</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-11  &nbsp;&nbsp;&nbsp;经济与金融系举办2019入党积极分子培训班开班典礼</a></li>
+                </ul>
+            </div>
+            <div  class="menu-bottom-right">
+                <span>外媒聚焦</span>
+                <img src="align/align-right.png" alt="">
+                <div class="line"></div>
+                <ul>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-03  &nbsp;&nbsp;&nbsp;南方网：佛山全球创新技术应用转化中心落户海大寸金学院</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-23  &nbsp;&nbsp;&nbsp;南方网：海大寸金学院雷锋月“校内一条街”志愿活动顺利举办</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-04-15  &nbsp;&nbsp;&nbsp;腾讯网：海大寸金学院与湛江市文化馆联合举办非遗图片展 </a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-03-15  &nbsp;&nbsp;&nbsp;中国日报中文网：精彩绝伦！海大寸金学院服装专业举办毕业作品发布会</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-01-14  &nbsp;&nbsp;&nbsp;优酷：疆域有边，设计无界，毕业生服装设计作品秀 </a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-01-14  &nbsp;&nbsp;&nbsp;网易：时代楷模曲建武教授到海大寸金学院作专题报告</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2019-01-04  &nbsp;&nbsp;&nbsp;湛江新闻网：校园“剪刀手”剪发为公益</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-12-22  &nbsp;&nbsp;&nbsp;网易广东：海大寸金学院在首届粤港澳大湾区高校学生BIM-CIM创新大赛中获佳绩</a></li>
+                    <li><a href="https://www.gdcjxy.com/">&nbsp;&nbsp;2018-12-18  &nbsp;&nbsp;&nbsp;网易新闻：海大寸金学院2019届毕业生供需见面会在新湖校区举行</a></li>
+                </ul>
+            </div>
+            <div  class="menu-bottom">
+                <span>校园风光 | 校园视频</span>
+                <img src="align/pic-side.png" alt="">
+                <div class="line"></div>
+                <div class="wrapper-pics">
+                    <div class="pics"><img src="bottom-pic/8.jpg" alt=""></div>
+                    <div class="pics"><img src="bottom-pic/7.jpg" alt=""></div>
+                    <div class="pics"><img src="bottom-pic/5.jpg" alt=""></div>
+                    <div class="pics"><img src="bottom-pic/6.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <br>
+            <br>
+            <h5>版权所有 Copyright © 2015-2020 广东海洋大学寸金学院 All Rights Reserved 仿制必究</h5>
+            <br>
+            <h5>地址：广东省湛江市麻章区学智路二号（524094）联系电话：（0759）3871366（院办） 3263968/3871311(招生)</h5>
+            <br>
+            <h5>粤ICP备12049155号</h5>
+            <div class="QR">
+            </div>
+        </div>  
+    </div>
+
+
+
+</body>
+</html>
